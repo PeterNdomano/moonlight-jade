@@ -23,6 +23,7 @@ Tags: materialistic, company, organization
 :root{
     --primaryColor: #007bff;
     --secondaryColor: #343a40;
+    --secondaryLightColor: #E9ECEF;
     --accentColor: #ffc107;
     --lightColor: #f8f9fa;
     --darkColor: #262626;
@@ -44,6 +45,11 @@ html {
 }
 
 /*-----Utility classes-----*/
+.mn-btn-next {
+    box-shadow: none !important;
+    font-size: 30px;
+    color: var(--secondaryColor);
+}
 
 .mn-full-height {
     height: 100%;
@@ -51,6 +57,21 @@ html {
 
 .mn-full-width {
     width: 100%;
+}
+
+.mn-text-light {
+    font-weight: 300;
+}
+
+.mn-h1 {
+    font-size: 60px;
+}
+
+@media (max-width: 768px) {
+    .mn-btn-next {
+        box-shadow: none !important;
+        font-size: 20px;
+    }
 }
 
 /*-----Top Bar Navigation & Menus-----*/
@@ -187,4 +208,177 @@ html {
     .mn-nav-items-container-sm {
         display: block !important;
     }
+}
+
+
+/*-----Banner & Site Introductions-----*/
+.mn-banner {
+    width: 100%;
+    margin-top: var(--topBarHeight);
+    min-height: 100vh;
+    background: var(--darkColor);
+    background-image: url(assets/images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+    padding-top: var(--topBarHeight);
+}
+
+.mn-banner .col-md-6,
+.mn-banner .col-md-4,
+.mn-banner .col-md-3,
+.mn-banner .col-md-8,
+.mn-banner .col-sm-12 {
+    margin-bottom: 20px !important;
+}
+.mn-banner .mn-intro-card {
+    height: 200px;
+}
+
+
+/*-----Sections for showcasing products, abouts, contact etc..-----*/
+.mn-section {
+    width: 100%;
+    background: var(--lightColor);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.mn-section-title {
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: var(--secondaryColor);
+    width: 300px;
+    padding: 10px;
+    border-bottom: 1px solid var(--accentColor);
+}
+
+.mn-section-icon {
+    line-height: 100%;
+    font-size: 30px;
+    color: var(--accentColor);
+    font-weight: 600;
+}
+
+.mn-section .col-md-6,
+.mn-section .col-md-4,
+.mn-section .col-md-3,
+.mn-section .col-md-8,
+.mn-section .col-sm-12 {
+    margin-bottom: 20px !important;
+    padding: 0;
+}
+
+.mn-section .mn-item-card {
+    height: 300px;
+    width: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    margin: 0 auto !important;
+}
+
+.mn-section .mn-item-card:hover {
+    width: 100%;
+}
+
+.mn-section .mn-item-card > .card-img-overlay {
+    transition: all 0.5s ease;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.mn-section .mn-item-card > .card-img-overlay:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1));
+}
+
+.mn-section .mn-item-card > .card-img-overlay  > div {
+    position: absolute;
+    color: var(--lightColor);
+    bottom: 0;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .mn-section .mn-item-card:hover {
+        width: 95%;
+    }
+}
+
+/*-----Reviews carousel-----*/
+.mn-carousel {
+    height: 300px !important;
+    overflow: hidden;
+}
+
+.mn-carousel-btn {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.9) !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--accentColor);
+}
+
+.mn-review-quote {
+    font-weight: 800 !important;
+    font-size: 30px;
+    color: var(--secondaryColor);
+}
+
+.mn-carousel .jumbotron > div{
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*-----Footer & Credits-----*/
+.mn-footer {
+    min-height: 50vh;
+    background: var(--secondaryLightColor);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: var(--secondaryColor);
+}
+
+.mn-footer p {
+    font-weight: 300;
+    color: var(--secondaryColor);
+    font-size: 16px;
+    line-height: 10px;
+}
+
+.mn-footer p > a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.mn-footer .mn-social-icon {
+    font-weight: 500;
+    color: var(--secondaryColor);
+}
+
+.mn-footer .mn-footer-info-title {
+    margin-bottom: 30px;
+}
+
+.mn-footer-credit {
+    margin-top: 30px;
+}
+
+.mn-footer-credit > h6{
+    font-weight: 300;
+    color: var(--secondaryColor);
+    font-size: 14px;
+}
+
+.mn-footer-credit > h6 > a{
+    text-decoration: inherit;
+    color: inherit;
 }
