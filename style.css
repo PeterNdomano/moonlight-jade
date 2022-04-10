@@ -13,3 +13,121 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: materialistic, company, organization
 
 */
+
+@import url(assets/icons/font-awesome/css/font-awesome.min.css);
+@import url(assets/icons/simple-line-icons/css/simple-line-icons.css);
+@import url(assets/icons/material-design-iconic-font/css/materialdesignicons.min.css);
+
+
+/*-----General Styling-----*/
+:root{
+    --primaryColor: #007bff;
+    --secondaryColor: #343a40;
+    --accentColor: #ffc107;
+    --lightColor: #f8f9fa;
+    --darkColor: #262626;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --topBarHeight: 80px;
+}
+
+body,
+html {
+    font-family: var(--font-family-sans-serif);
+    background: var(--lightColor);
+    color: var(--darkColor);
+}
+
+/*-----Utility classes-----*/
+
+.mn-full-height {
+    height: 100%;
+}
+
+.mn-full-width {
+    width: 100%;
+}
+
+/*-----Top Bar Navigation & Menus-----*/
+.mn-topbar {
+    width: 100%;
+    height: var(--topBarHeight);
+    background: var(--darkColor);
+    padding: 0;
+    margin: 0;
+    z-index: 9999;
+}
+
+.mn-topbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.mn-menu-btn {
+    margin: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.mn-menu-btn > i {
+    font-size: 30px;
+    color: var(--lightColor);
+}
+
+.mn-topbar-title > h3 {
+    color: var(--lightColor);
+}
+
+.mn-nav-items-container-lg {
+    background: none;
+}
+
+.mn-nav-items-container-lg > .mn-nav-item {
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--secondaryColor);
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: var(--lightColor);
+    transition: all 0.5s ease;
+}
+
+.mn-nav-items-container-lg > .mn-nav-item > h3 {
+    font-size: 20px;
+}
+
+.mn-nav-items-container-lg > .mn-nav-item:hover,
+.mn-nav-items-container-lg > .mn-nav-item[data-active="true"] {
+    color: var(--accentColor);
+    border-bottom: 4px solid var(--accentColor);
+}
+
+.mn-nav-items-container-sm {
+    position: fixed;
+    z-index: 99999;
+    top: var(--topBarHeight);
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    background: var(--darkColor);
+}
+
+@media (max-width: 768px) {
+    .mn-menu-btn {
+        display: block;
+    }
+
+    .mn-nav-items-container-lg {
+        display: none !important;
+    }
+}
