@@ -65,6 +65,12 @@ html {
 
 .mn-h1 {
     font-size: 60px;
+    font-weight: 300;
+}
+
+.mn-h2 {
+    font-size: 40px;
+    font-weight: 300;
 }
 
 @media (max-width: 768px) {
@@ -122,8 +128,8 @@ html {
     margin: 0px;
     padding-bottom: 10px;
     border-bottom: 4px solid var(--secondaryColor);
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
     cursor: pointer;
     color: var(--lightColor);
     transition: all 0.5s ease;
@@ -214,6 +220,8 @@ html {
 /*-----Banner & Site Introductions-----*/
 .mn-banner {
     width: 100%;
+    margin: 0;
+    padding: 0;
     margin-top: var(--topBarHeight);
     min-height: 100vh;
     background: var(--darkColor);
@@ -222,20 +230,41 @@ html {
     background-size: cover;
     background-attachment: fixed;
     background-position: left;
+}
+
+.mn-banner > .container-fluid {
     padding-top: var(--topBarHeight);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
 }
 
 .mn-banner .col-md-6,
+.mn-banner .col-md-12,
 .mn-banner .col-md-4,
 .mn-banner .col-md-3,
 .mn-banner .col-md-8,
 .mn-banner .col-sm-12 {
     margin-bottom: 20px !important;
 }
+
+.mn-banner .mn-site-logo {
+    width: 200px;
+    height: auto;
+}
+
 .mn-banner .mn-intro-card {
     height: 200px;
 }
 
+.mn-banner .mn-intro-card > .card-body {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /*-----Sections for showcasing products, abouts, contact etc..-----*/
 .mn-section {
@@ -262,10 +291,18 @@ html {
     font-weight: 600;
 }
 
-.mn-section .col-md-6,
-.mn-section .col-md-4,
+.mn-section .col-md-1,
+.mn-section .col-md-2,
 .mn-section .col-md-3,
+.mn-section .col-md-4,
+.mn-section .col-md-5,
+.mn-section .col-md-6,
+.mn-section .col-md-7,
 .mn-section .col-md-8,
+.mn-section .col-md-9,
+.mn-section .col-md-10,
+.mn-section .col-md-11,
+.mn-section .col-md-12,
 .mn-section .col-sm-12 {
     margin-bottom: 20px !important;
     padding: 0;
@@ -342,7 +379,7 @@ html {
 .mn-footer {
     min-height: 50vh;
     background: var(--secondaryLightColor);
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 30px;
     color: var(--secondaryColor);
 }
@@ -365,7 +402,8 @@ html {
 }
 
 .mn-footer .mn-footer-info-title {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .mn-footer-credit {

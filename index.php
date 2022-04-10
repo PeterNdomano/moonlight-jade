@@ -68,35 +68,44 @@
             </aside>
 
             <section class="mn-banner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12" style="min-height: 70vh;">
-                            <h1 class="mn-text-light mn-h1" style="color: var(--lightColor);">
-                                Welcome Message comes here
-                            </h1>
-                        </div>
-                        <div class="col-md-8 col-sm-12">
-                            <div class="row">
-                                <!--two products types-->
-                                <div class="col-md-6">
-                                    <div class="card mn-intro-card">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card mn-intro-card">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12" style="min-height: 70vh;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img class="mn-site-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/werenium_logo.png"/>
+                                        <h1 class="mn-text-light mn-h2" style="color: var(--lightColor);">
+                                            Welcome Message comes here
+                                        </h1>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <!--two service types-->
-                                <div class="col-md-6">
-                                    <div class="card mn-intro-card">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card mn-intro-card bg-primary">
+                                            <div class="card-body text-right text-light">
+                                                <h1 class="mn-h1">130+</h1>
+                                                <h5>Customers Served</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-4"></div><!-- Just a spacer -->
+                                            <div class="col-md-8">
+                                                <div class="card mn-intro-card bg-warning">
+                                                    <div class="card-body text-right">
+                                                        <h1 class="mn-h1">24/7</h1>
+                                                        <h5>Available</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="card mn-intro-card">
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -284,8 +293,8 @@
                         <div class="card mn-item-card" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/img1.jpg)">
                             <div class="card-img-overlay">
                                 <div>
-                                    <h4 class="card-title">Post title</h4>
-                                    <p style="card-text">Service short description comes here hhhh hhhh</p>
+                                    <h4 class="card-title">Post 1 title</h4>
+                                    <p style="card-text">Post 1 excerp comes here to introduce reader to this post</p>
                                 </div>
                             </div>
                         </div>
@@ -295,8 +304,8 @@
                         <div class="card mn-item-card" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/bg1.jpg)">
                             <div class="card-img-overlay">
                                 <div>
-                                    <h4 class="card-title">Post title</h4>
-                                    <p style="card-text">Service short description comes here hhhh hhhh</p>
+                                    <h4 class="card-title">Post 2 title</h4>
+                                    <p style="card-text">Post 2 excerp comes here to introduce reader to this post</p>
                                 </div>
                             </div>
                         </div>
@@ -322,9 +331,18 @@
                             <i class="icon-phone mn-social-icon"></i>
                             +255 767 XXX XXX
                         </p>
-                        <p>+254 767 XXX XXX</p>
-                        <p>support@site.com</p>
-                        <p>admin@site.com</p>
+                        <p>
+                            <i class="icon-phone mn-social-icon"></i>
+                            +254 767 XXX XXX
+                        </p>
+                        <p>
+                            <i class="icon-envelope-letter mn-social-icon"></i>
+                            support@site.com
+                        </p>
+                        <p>
+                            <i class="icon-envelope-letter mn-social-icon"></i>
+                            admin@site.com
+                        </p>
                     </div>
 
                     <div class="col-md-4">
