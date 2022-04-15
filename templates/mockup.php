@@ -76,12 +76,8 @@
                                     <div class="col-md-12">
                                         <img class="mn-site-logo" src="<?php echo get_template_directory_uri() ?>/assets/images/werenium_logo.png"/>
                                         <h1 class="mn-text-light mn-h2" style="color: var(--lightColor);">
-                                            Werenium Technologies Company LTD
+                                            Welcome Message comes here
                                         </h1>
-                                        <h6 class="text-light mn-h3" style="margin-top: 30px;">
-                                            Professional computer programming and cyber security services provider
-                                        </h6>
-                                        <!-- you can add more text here to describe your site in summary-->
                                     </div>
                                 </div>
                             </div>
@@ -375,7 +371,7 @@
                         <hr />
                         <h6><a href="#">Theme By Peter Ndomano</a></h6>
                         <h6><a href="#">Powered By WordPress</a></h6>
-                        <h6>&copy;siteowner</h6>
+                        <h6>&copy;mockup</h6>
                     </div>
                 </div>
             </div>
