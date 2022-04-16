@@ -1,7 +1,7 @@
 <?php
 $args = array(
     'post_type' => 'post',
-    'post_per_page' => 2,
+    'posts_per_page' => 2,
 );
 $the_query = new WP_Query( $args );
 ?>
@@ -24,26 +24,64 @@ $the_query = new WP_Query( $args );
                 if($count === 1){
                     ?>
                     <div class="col-md-8">
-                        <div onclick="window.location.href='<?php the_permalink() ?>'" class="card mn-item-card" style="background-image: url(<?php echo $thumb_url ?>">
-                            <div class="card-img-overlay">
-                                <div>
-                                    <h3 class="card-title"><?php the_title() ?></h3>
+                        <?php
+                        if(has_post_thumbnail()){
+                            ?>
+                            <div onclick="window.location.href='<?php the_permalink() ?>'" class="card mn-item-card" style="background-image: url(<?php echo $thumb_url ?>">
+                                <div class="card-img-overlay">
+                                    <div>
+                                        <h3 class="card-title"><?php the_title() ?></h3>
+                                        <p class="card-text"><?php the_excerpt() ?></p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <?php
+                        }
+                        else{
+                            ?>
+                            <div onclick="window.location.href='<?php the_permalink() ?>'" class="card mn-item-card bg-light">
+                                <div class="card-img-overlay">
+                                    <div>
+                                        <h4 class="card-title"><?php the_title() ?></h4>
+                                        <p class="card-text"><?php the_excerpt() ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        ?>
+
                     </div>
                     <?php
                 }
                 else{
                     ?>
                     <div class="col-md-4">
-                        <div onclick="window.location.href='<?php the_permalink() ?>'" class="card mn-item-card" style="background-image: url(<?php echo $thumb_url ?>">
-                            <div class="card-img-overlay">
-                                <div>
-                                    <h4 class="card-title"><?php the_title() ?></h4>
+                        <?php
+                        if(has_post_thumbnail()){
+                            ?>
+                            <div onclick="window.location.href='<?php the_permalink() ?>'" class="card mn-item-card" style="background-image: url(<?php echo $thumb_url ?>">
+                                <div class="card-img-overlay">
+                                    <div>
+                                        <h4 class="card-title"><?php the_title() ?></h4>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <?php
+                        }
+                        else{
+                            ?>
+                            <div onclick="window.location.href='<?php the_permalink() ?>'" class="card mn-item-card bg-light">
+                                <div class="card-img-overlay">
+                                    <div>
+                                        <h4 class="card-title"><?php the_title() ?></h4>
+                                        <p class="card-text"><?php the_excerpt() ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        ?>
                     </div>
                     <?php
                 }

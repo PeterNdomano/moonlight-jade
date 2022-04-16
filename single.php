@@ -27,7 +27,7 @@ if(has_post_thumbnail()){
         <?php
     }
     ?>
-    <div class="container" style="padding-top: var(--topBarHeight);padding-bottom: var(--topBarHeight);">
+    <div class="container mn-section-pad">
         <div class="row">
             <div class="col-md-4 p-3">
                 <?php

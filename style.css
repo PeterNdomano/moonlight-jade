@@ -301,6 +301,11 @@ html {
     padding-bottom: 0px;
 }
 
+.mn-section-pad{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .mn-section-title {
     font-weight: 300;
     font-size: 40px;
