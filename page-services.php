@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Products Page Template
+Template Name: Services Page Template
 */
 $args = array(
     'post_type' => 'services',

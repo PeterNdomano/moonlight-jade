@@ -16,9 +16,14 @@
                                 <div>
                                     <i class="icon-note mn-review-quote"></i>
                                     <h3>
+                                        <!--review message below -->
                                         Best Software products are here
                                     </h3>
-                                    <p>Customer name, company, role</p>
+
+                                    <p>
+                                        <!--reviewer name or company -->
+                                        Customer name, company, role
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -27,9 +32,14 @@
                                 <div>
                                     <i class="icon-note mn-review-quote"></i>
                                     <h3>
+                                        <!--review message below -->
                                         Best Software products are here
                                     </h3>
-                                    <p>Customer name, company, role</p>
+
+                                    <p>
+                                        <!--reviewer name or company -->
+                                        Customer name, company, role
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -38,9 +48,14 @@
                                 <div>
                                     <i class="icon-note mn-review-quote"></i>
                                     <h3>
+                                        <!--review message below -->
                                         Best Software products are here
                                     </h3>
-                                    <p>Customer name, company, role</p>
+
+                                    <p>
+                                        <!--reviewer name or company -->
+                                        Customer name, company, role
+                                    </p>
                                 </div>
                             </div>
                         </div>

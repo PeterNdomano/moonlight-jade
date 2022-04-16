@@ -1,19 +1,7 @@
 <?php
 
 $pages = get_pages();
-//print_r($pages);
-//remove blog, products, services from pages
-if(sizeof($pages) > 0){
-    for( $i = 0; $i < sizeof($pages); $i++ ){
-        if(
-            strtolower($pages[$i]->post_title) === 'blog' ||
-            strtolower($pages[$i]->post_title) === 'services' ||
-            strtolower($pages[$i]->post_title) === 'products'
-        ){
-            unset($pages[$i]);
-        }
-    }
-}
+
 ?>
 <nav class="mn-topbar mn-topbar-fixed">
     <div class="d-flex mn-full-height container">
@@ -28,13 +16,13 @@ if(sizeof($pages) > 0){
                 <h3><a href="<?php echo get_bloginfo('url') ?>">Home</a></h3>
             </div>
             <div class="mn-nav-item align-self-center">
-                <h3><a href="<?php echo get_bloginfo('url') ?>/index.php/blog">Blog</a></h3>
+                <h3><a href="<?php echo get_bloginfo('url') ?>/index.php/Blog">Blog</a></h3>
             </div>
             <div class="mn-nav-item align-self-center">
-                <h3><a href="<?php echo get_bloginfo('url') ?>/index.php/products">Products</a></h3>
+                <h3><a href="<?php echo get_bloginfo('url') ?>/index.php/Products">Products</a></h3>
             </div>
             <div class="mn-nav-item align-self-center">
-                <h3><a href="<?php echo get_bloginfo('url') ?>/index.php/services">Services</a></h3>
+                <h3><a href="<?php echo get_bloginfo('url') ?>/index.php/Services">Services</a></h3>
             </div>
             <?php
                 //print the remaining pages
@@ -48,11 +36,19 @@ if(sizeof($pages) > 0){
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <?php
                                     foreach ($pages as $page) {
-                                        ?>
-                                            <a class="dropdown-item" href="<?php echo get_bloginfo('url')."/index.php/".$page->post_name ?>">
-                                                <?php echo $page->post_title; ?>
-                                            </a>
-                                        <?php
+                                        if(
+                                            strtolower($page->post_title) !== 'blog' &&
+                                            strtolower($page->post_title) !== 'services' &&
+                                            strtolower($page->post_title) !== 'products'
+                                        ){
+                                            ?>
+                                                <a class="dropdown-item" href="<?php echo get_bloginfo('url')."/index.php/".$page->post_name ?>">
+                                                    <?php echo $page->post_title; ?>
+                                                </a>
+                                            <?php
+
+                                        }
+
                                     }
                                 ?>
                             </div>

@@ -27,9 +27,20 @@ function mn_create_posttypes() {
             ),
             'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields',),
             'public' => true,
+            'hierarchical' => true,
+            'capability_type' => 'post',
             'has_archive' => true,
             'rewrite' => array('slug' => 'products'),
             'show_in_rest' => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_nav_menus'   => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 5,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
 
         )
     );
@@ -43,9 +54,20 @@ function mn_create_posttypes() {
             ),
             'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields',),
             'public' => true,
+            'hierarchical' => false,
+            'capability_type' => 'post',
             'has_archive' => true,
             'rewrite' => array('slug' => 'services'),
             'show_in_rest' => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_nav_menus'   => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 5,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
 
         )
     );
