@@ -275,8 +275,8 @@ html {
 .mn-section {
     width: 100%;
     background: var(--lightColor);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 110px;
+    padding-bottom: 0px;
 }
 
 .mn-section-title {
@@ -288,6 +288,7 @@ html {
     padding: 10px;
     border-bottom: 1px solid var(--accentColor);
 }
+
 
 .mn-section-icon {
     line-height: 100%;
@@ -384,7 +385,7 @@ html {
 .mn-footer {
     min-height: 50vh;
     background: var(--secondaryLightColor);
-    padding-top: 10px;
+    padding-top: 40px;
     padding-bottom: 30px;
     color: var(--secondaryColor);
 }

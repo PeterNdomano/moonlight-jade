@@ -17,5 +17,4 @@
     <body>
         <header>
             <?php get_template_part('menus/main-menu') ?>
-            <?php get_template_part('banners/simple-banner') ?>
         </header>
