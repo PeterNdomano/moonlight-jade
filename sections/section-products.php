@@ -1,3 +1,6 @@
+<?php
+    
+?>
 <section class="mn-section">
     <div class="container">
         <h3 class="mn-section-title">
@@ -41,7 +44,7 @@
             </div>
 
             <div class="col-md-12 text-right">
-                <a class="btn mn-btn-next text-dark" href="#">
+                <a class="btn mn-btn-next text-dark" href="<?php echo get_bloginfo('url') ?>/index.php/products">
                     More Products
                     <i class="icon-arrow-right-circle"></i>
                 </a>

@@ -1,5 +1,6 @@
 <?php
 get_header();
+get_template_part('banners/simple-banner');
 get_template_part('sections/section-products');
 get_template_part('sections/section-services');
 get_template_part('sections/section-reviews');

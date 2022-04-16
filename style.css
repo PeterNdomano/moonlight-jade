@@ -140,6 +140,14 @@ html {
     transition: all 0.5s ease;
 }
 
+.mn-nav-items-container-lg > .mn-nav-item-btn {
+    width: 120px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 .mn-nav-items-container-lg > .mn-nav-item > h3 {
     font-size: 20px;
 }
