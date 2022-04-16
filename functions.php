@@ -51,6 +51,7 @@ function mn_create_posttypes() {
     );
 
     //reviews
+    /*
     register_post_type( 'reviews',
         array(
             'labels' => array(
@@ -65,6 +66,7 @@ function mn_create_posttypes() {
 
         )
     );
+    */
 }
 
 ?>
