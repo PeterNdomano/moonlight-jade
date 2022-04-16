@@ -221,6 +221,14 @@ html {
     text-decoration: inherit;
 }
 
+.mn-nav-items-container-sm > .mn-nav-item-btn {
+    width: 200px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 
 .mn-nav-items-container-sm > .mn-nav-item:hover,
 .mn-nav-items-container-sm > .mn-nav-item[data-active="true"] {
@@ -350,6 +358,7 @@ html {
     transition: all 0.5s ease;
     cursor: pointer;
     margin: 0 auto !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25), 0 3px 10px 5px rgba(0, 0, 0, 0.05) !important;
 }
 
 .mn-section .mn-item-card:hover {

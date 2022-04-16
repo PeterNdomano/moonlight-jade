@@ -5,7 +5,17 @@
                 <div class="col-md-6 col-sm-12" style="min-height: 70vh;">
                     <div class="row">
                         <div class="col-md-12">
-                            <img class="mn-site-logo" src="<?php echo get_theme_file_uri('assets/images/werenium_logo.png') ?>"/>
+                            <?php
+                            if( get_custom_logo() ){
+                                the_custom_logo();
+                            }
+                            else{
+                                ?>
+                                <!-- Upload site logo to disable the default logo -->
+                                <img class="mn-site-logo" src="<?php echo get_theme_file_uri('assets/images/internet.png') ?>"/>
+                                <?php
+                            }
+                            ?>
                             <h1 class="mn-text-light mn-h2" style="color: var(--lightColor);">
                                 <?php echo get_bloginfo('name') ?>
                             </h1>

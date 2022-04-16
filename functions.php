@@ -1,6 +1,20 @@
 <?php
 add_action( 'init', 'mn_create_posttypes' );
+add_action( 'init', 'reset_premalinks' );
 add_filter( 'the_excerpt', 'mn_excerpt_shortener');
+add_action( 'after_setup_theme' , 'config_custom_logo' );
+add_filter( 'get_custom_logo', 'change_logo_class' );
+
+
+function change_logo_class( $html ) {
+    $html = str_replace( 'custom-logo', 'mn-site-logo', $html );
+    //$html = str_replace( 'custom-logo-link', 'your-custom-class', $html );
+    return $html;
+}
+
+function config_custom_logo() {
+    add_theme_support( 'custom-logo' );
+}
 
 function mn_excerpt_shortener( $content ){
     if( strlen( $content ) > 60 ){
@@ -89,6 +103,11 @@ function mn_create_posttypes() {
         )
     );
     */
+}
+
+function reset_premalinks() {
+    global $wp_rewrite;
+    $wp_rewrite->set_permalink_structure( '/%postname%/' );
 }
 
 ?>

@@ -93,7 +93,7 @@ $the_query = new WP_Query( $args );
 
 
             <div class="col-md-12 text-right">
-                <a class="btn mn-btn-next text-dark" href="<?php echo get_bloginfo('url') ?>/index.php/services">
+                <a class="btn mn-btn-next text-dark" href="<?php echo get_bloginfo('url') ?>/index.php/Services">
                     More Services
                     <i class="icon-arrow-right-circle"></i>
                 </a>

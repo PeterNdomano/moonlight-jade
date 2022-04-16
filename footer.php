@@ -1,6 +1,7 @@
 <footer class="mn-footer">
     <div class="container">
         <div class="row">
+            <!-- Edit contact information as you see fit -->
             <div class="col-md-4">
                 <h3 class="mn-footer-info-title">Contacts</h3>
                 <p>
@@ -23,7 +24,7 @@
 
             <div class="col-md-4">
                 <h3 class="mn-footer-info-title">Main Office</h3>
-                <p>Lindi Tanzania</p>
+                <p>Internet</p>
                 <p>P.O.Box 236</p>
             </div>
 
@@ -45,9 +46,9 @@
 
             <div class="col-md-12 text-left mn-footer-credit">
                 <hr />
-                <h6><a href="#">Theme By Peter Ndomano</a></h6>
-                <h6><a href="#">Powered By WordPress</a></h6>
-                <h6>&copy;siteowner</h6>
+                <h6><a href="https://dev.to/peterndomano"><b>Theme By Peter Ndomano</b></a></h6>
+                <h6><a href="wordpress.org">Powered By WordPress</a></h6>
+                <h6>&copy; <?php echo get_bloginfo('name') ?></h6>
             </div>
         </div>
     </div>

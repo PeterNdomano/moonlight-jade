@@ -94,7 +94,7 @@ $the_query = new WP_Query( $args );
 
 
             <div class="col-md-12 text-right">
-                <a class="btn mn-btn-next text-dark" href="<?php echo get_bloginfo('url') ?>/index.php/blog">
+                <a class="btn mn-btn-next text-dark" href="<?php echo get_bloginfo('url') ?>/index.php/Blog">
                     More Blog Posts
                     <i class="icon-arrow-right-circle"></i>
                 </a>
