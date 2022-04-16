@@ -353,6 +353,7 @@ html {
     padding-bottom: 20px;
 }
 
+
 @media (max-width: 768px) {
     .mn-section .mn-item-card:hover {
         width: 95%;

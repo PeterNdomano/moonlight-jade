@@ -3,7 +3,13 @@ add_action( 'init', 'mn_create_posttypes' );
 add_filter( 'the_excerpt', 'mn_excerpt_shortener');
 
 function mn_excerpt_shortener( $content ){
-
+    if( strlen( $content ) > 60 ){
+        $content = substr( $content, 0, 60).'.....';
+        return $content;
+    }
+    else{
+        return $content;
+    }
 }
 
 function mn_create_posttypes() {

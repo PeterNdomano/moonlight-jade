@@ -24,11 +24,10 @@ $the_query = new WP_Query( $args );
                 if($count === 1){
                     ?>
                     <div class="col-md-6">
-                        <div class="card mn-item-card" style="background-image: url(<?php echo $thumb_url ?>">
+                        <div onclick="window.location.href='<?php the_permalink() ?>'" class="card mn-item-card" style="background-image: url(<?php echo $thumb_url ?>">
                             <div class="card-img-overlay">
                                 <div>
-                                    <h4 class="card-title"><?php the_title() ?></h4>
-                                    <p style="card-text"><?php the_excerpt() ?></p>
+                                    <h3 class="card-title"><?php the_title() ?></h3>
                                 </div>
                             </div>
                         </div>
@@ -37,47 +36,24 @@ $the_query = new WP_Query( $args );
                 }
                 else{
                     ?>
-
+                    <div class="col-md-3">
+                        <div onclick="window.location.href='<?php the_permalink() ?>'" class="card mn-item-card" style="background-image: url(<?php echo $thumb_url ?>">
+                            <div class="card-img-overlay">
+                                <div>
+                                    <h4 class="card-title"><?php the_title() ?></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <?php
                 }
             ?>
             <?php $count++ ?>
-        <?php endwhile; wp_reset_postdata(); ?>
+            <?php endwhile; wp_reset_postdata(); ?>
             <?php else: ?>
                 <p><?php _e( 'Sorry, no products were found' ); ?></p>
             <?php endif; ?>
-            <div class="col-md-6">
-                <div class="card mn-item-card" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/img1.jpg)">
-                    <div class="card-img-overlay">
-                        <div>
-                            <h4 class="card-title">Product 1</h4>
-                            <p style="card-text">Product short description comes here hhhh hhhh</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-md-3">
-                <div class="card mn-item-card" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/bg1.jpg)">
-                    <div class="card-img-overlay">
-                        <div>
-                            <h4 class="card-title">Product 2</h4>
-                            <p style="card-text">Product short description comes here hhhh hhhh</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card mn-item-card" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/img1.jpg)">
-                    <div class="card-img-overlay">
-                        <div>
-                            <h4 class="card-title">Product 3</h4>
-                            <p style="card-text">Product short description comes here hhhh hhhh</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div class="col-md-12 text-right">
                 <a class="btn mn-btn-next text-dark" href="<?php echo get_bloginfo('url') ?>/index.php/products">
