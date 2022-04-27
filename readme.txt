@@ -7,6 +7,7 @@ Author: Peter Ndomano
 Requires at least: 4.7
 Tested up to: 5.9
 Requires PHP: 7.0
+Stable tag: v0.2.1
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
