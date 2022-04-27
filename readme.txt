@@ -20,8 +20,6 @@ Showcase your Products, Services and various articles with this theme.
 
 ![home-main](https://user-images.githubusercontent.com/28900892/165598065-78a557fe-7d2b-450d-af51-e7dbeb0ad977.png)
 
-### How To Install.
-You can download a moonlight-jade.zip archive from any of the [releases](github.com/PeterNdomano/moonlight-jade/releases/) here on github or install it from wordpress theme directory. After installing Activate this theme in Admin Panel to start using it.
 
 ### End User Instructions
 
