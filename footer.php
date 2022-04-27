@@ -60,6 +60,6 @@
 <script src="<?php echo get_theme_file_uri('assets/libs/mdb/js/mdb.min.js') ?>"></script>
 <script src="<?php echo get_theme_file_uri('assets/libs/aos/aos.js') ?>"></script>
 <script src="<?php echo get_theme_file_uri('assets/js/topbar.js') ?>"></script>
-<script src="<?php echo get_theme_file_uri('assets/js/index.js') ?>"></script>
+<script type="module" src="<?php echo get_theme_file_uri('assets/js/index.js') ?>"></script>
 </body>
 </html>

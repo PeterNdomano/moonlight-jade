@@ -26,12 +26,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12" data-aos="fade-left">
+                <div class="col-md-6 col-sm-12" data-aos="fade-up">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card mn-intro-card bg-primary">
                                 <div class="card-body text-right text-light">
-                                    <h1 class="mn-h1">130+</h1>
+                                    <h1 class="mn-h1">
+                                        <span id="customersServed">130</span>+
+                                    </h1>
                                     <h5>Customers Served</h5>
                                 </div>
                             </div>
@@ -42,7 +44,11 @@
                                 <div class="col-md-8">
                                     <div class="card mn-intro-card bg-warning">
                                         <div class="card-body text-right">
-                                            <h1 class="mn-h1">24/7</h1>
+                                            <h1 class="mn-h1">
+                                                <span id="workHours">24</span>
+                                                /
+                                                <span id="workDays">7</span>
+                                            </h1>
                                             <h5>Available</h5>
                                         </div>
                                     </div>
