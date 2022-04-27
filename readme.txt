@@ -1,4 +1,19 @@
-# Moonlight Jade
+=== MoonLight Jade ===
+Theme Name: Moonlight Jade
+Contributors: peterndomano
+Tags: materialistic, company, organization, clean, start-up, startup, simple
+Theme URI: https://github.com/PeterNdomano/moonlight-jade
+Author: Peter Ndomano
+Requires at least: 4.7
+Tested up to: 5.9
+Requires PHP: 7.0
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+
+Clean & Responsive WordPress theme for organizations, companies or business websites. Showcase your Products, Services and various articles with this theme.
+
+== Description ==
+
 Clean & Responsive WordPress theme for organizations, companies or business websites.
 Showcase your Products, Services and various articles with this theme.
 
@@ -28,5 +43,6 @@ For better perfomance please adhere to the following instructions after installi
 * Animate On Scroll
 * Mobile First.
 
-### Contributions
-You're welcome to open Issues and Submit PRs
+
+== Screenshots ==
+screenshot.png
