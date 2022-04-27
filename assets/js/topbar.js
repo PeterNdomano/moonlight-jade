@@ -6,9 +6,13 @@ function mnToggleMenu(){
 
     if(sideMenu.dataset['open'] === "true"){
         sideMenu.dataset['open'] = "false";
+        document.getElementById('openBtn').style.display = 'block';
+        document.getElementById('closeBtn').style.display = 'none';
     }
     else{
         sideMenu.dataset['open'] = "true";
+        document.getElementById('openBtn').style.display = 'none';
+        document.getElementById('closeBtn').style.display = 'block';
     }
 
     return false;
