@@ -1,12 +1,14 @@
+Requires at least: 5.9
+Tested up to: 5.9
+Requires PHP: 7.4
+Version (Latest): 0.2.1
+Version (Stable): 0.2.1
+
 # Moonlight Jade
 Clean & Responsive WordPress theme for organizations, companies or business websites.
 Showcase your Products, Services and various articles with this theme.
 
-#### Requires at least: 5.9
-#### Tested up to: 5.9
-#### Requires PHP: 7.4
-#### Version (Latest): 0.2.1
-#### Version (Stable): 0.2.1
+
 
 
 ![home-main](https://user-images.githubusercontent.com/28900892/165598065-78a557fe-7d2b-450d-af51-e7dbeb0ad977.png)
