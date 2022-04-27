@@ -23,7 +23,7 @@ $the_query = new WP_Query( $args );
                 $thumb_url = $thumb_url_array[0];
                 if($count === 3){
                     ?>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="zoom-in-right">
                         <?php
                         if(has_post_thumbnail()){
                             ?>
@@ -55,7 +55,7 @@ $the_query = new WP_Query( $args );
                 }
                 else{
                     ?>
-                    <div class="col-md-3">
+                    <div class="col-md-3" data-aos="zoom-in-right">
                         <?php
                         if(has_post_thumbnail()){
                             ?>

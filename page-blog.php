@@ -29,7 +29,7 @@ get_header();
                 $thumb_url = $thumb_url_array[0];
                 if($count === 1){
                     ?>
-                    <div class="col-md-12">
+                    <div data-aos="fade-up" class="col-md-12">
                         <?php
                         if(has_post_thumbnail()){
                             ?>
@@ -63,7 +63,7 @@ get_header();
                 else{
                     ?>
 
-                    <div class="col-md-4">
+                    <div data-aos="fade-up" class="col-md-4">
                         <?php
                         if(has_post_thumbnail()){
                             ?>

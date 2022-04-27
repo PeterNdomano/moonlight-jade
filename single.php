@@ -29,7 +29,7 @@ if(has_post_thumbnail()){
     ?>
     <div class="container mn-section-pad">
         <div class="row">
-            <div class="col-md-4 p-3">
+            <div data-aos="fade-up" class="col-md-4 p-3">
                 <?php
                 if(has_post_thumbnail()){
                     ?>
@@ -50,7 +50,7 @@ if(has_post_thumbnail()){
                 }
                 ?>
             </div>
-            <div class="col-md-8 p-2">
+            <div data-aos="fade-right" class="col-md-8 p-2">
                 <?php echo the_content() ?>
             </div>
         </div>

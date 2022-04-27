@@ -2,9 +2,9 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-12" style="min-height: 70vh;">
+                <div  class="col-md-6 col-sm-12" style="min-height: 70vh;">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div data-aos="fade-up-right" class="col-md-12">
                             <?php
                             if( get_custom_logo() ){
                                 the_custom_logo();
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12" data-aos="fade-left">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card mn-intro-card bg-primary">

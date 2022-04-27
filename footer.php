@@ -54,5 +54,12 @@
     </div>
 </footer>
 <?php wp_footer() ?>
+<script src="<?php echo get_theme_file_uri('assets/libs/jquery-3.2.1.min.js') ?>"></script>
+<script src="<?php echo get_theme_file_uri('assets/libs/popper.min.js') ?>"></script>
+<script src="<?php echo get_theme_file_uri('assets/libs/bootstrap/js/bootstrap.min.js') ?>"></script>
+<script src="<?php echo get_theme_file_uri('assets/libs/mdb/js/mdb.min.js') ?>"></script>
+<script src="<?php echo get_theme_file_uri('assets/libs/aos/aos.js') ?>"></script>
+<script src="<?php echo get_theme_file_uri('assets/js/topbar.js') ?>"></script>
+<script src="<?php echo get_theme_file_uri('assets/js/index.js') ?>"></script>
 </body>
 </html>

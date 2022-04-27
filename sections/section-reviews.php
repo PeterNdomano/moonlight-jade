@@ -7,7 +7,7 @@
 
         <div class="row">
             <!--3 most recent reviews-->
-            <div class="col-md-12 text-right">
+            <div class="col-md-12 text-right" data-aos="fade-up-right">
                 <div id="reviews" class="carousel slide mn-carousel" data-ride="carousel">
                     <!-- The slideshow -->
                     <div class="carousel-inner mn-full-height">

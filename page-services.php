@@ -13,7 +13,7 @@ get_header();
 
 <section class="mn-section">
     <div class="container mn-section-pad">
-        <h3 class="mn-section-title">
+        <h3 data-aos="fade-up" class="mn-section-title">
             <i class="mdi mdi-view-dashboard mn-section-icon"></i>
             Our Services
         </h3>
@@ -29,7 +29,7 @@ get_header();
                 $thumb_url = $thumb_url_array[0];
                 if($count === 1){
                     ?>
-                    <div class="col-md-12">
+                    <div data-aos="fade-up" class="col-md-12">
                         <?php
                         if(has_post_thumbnail()){
                             ?>
@@ -63,7 +63,7 @@ get_header();
                 else{
                     ?>
 
-                    <div class="col-md-4">
+                    <div data-aos="fade-up" class="col-md-4">
                         <?php
                         if(has_post_thumbnail()){
                             ?>

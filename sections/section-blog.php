@@ -23,7 +23,7 @@ $the_query = new WP_Query( $args );
                 $thumb_url = $thumb_url_array[0];
                 if($count === 1){
                     ?>
-                    <div class="col-md-8">
+                    <div data-aos="fade-up" class="col-md-8">
                         <?php
                         if(has_post_thumbnail()){
                             ?>
@@ -56,7 +56,7 @@ $the_query = new WP_Query( $args );
                 }
                 else{
                     ?>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="fade-up">
                         <?php
                         if(has_post_thumbnail()){
                             ?>
