@@ -6,7 +6,8 @@ $pages = get_pages();
 <nav class="mn-topbar mn-topbar-fixed">
     <div class="d-flex mn-full-height container">
         <div class="mn-menu-btn align-self-center p-2" onclick="mnToggleMenu()">
-            <i class="icon-menu"></i>
+            <i class="icon-menu" id="openBtn"></i>
+            <i class="icon-close" style="display: none;" id="closeBtn"></i>
         </div>
         <div class="mn-topbar-title align-self-center p-1">
             <h3><a href="<?php echo get_bloginfo('url') ?>"><?php echo get_bloginfo('name') ?></a></h3>
