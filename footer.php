@@ -46,7 +46,7 @@
 
             <div class="col-md-12 text-left mn-footer-credit">
                 <hr />
-                <h6><a href="https://dev.to/peterndomano"><b>Theme By Peter Ndomano</b></a></h6>
+                <h6><a href="https://github.com/PeterNdomano"><b>Theme By Peter Ndomano</b></a></h6>
                 <h6><a href="wordpress.org">Powered By WordPress</a></h6>
                 <h6>&copy; <?php echo get_bloginfo('name') ?></h6>
             </div>
