@@ -36,8 +36,8 @@ function mn_create_posttypes() {
     register_post_type( 'products',
         array(
             'labels' => array(
-                'name' => __( 'Products' ),
-                'singular_name' => __( 'Product' )
+                'name' => 'Products',
+                'singular_name' => 'Product'
             ),
             'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields',),
             'public' => true,
@@ -63,8 +63,8 @@ function mn_create_posttypes() {
     register_post_type( 'services',
         array(
             'labels' => array(
-                'name' => __( 'Services' ),
-                'singular_name' => __( 'Service' )
+                'name' => 'Services',
+                'singular_name' => 'Service'
             ),
             'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields',),
             'public' => true,

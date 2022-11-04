@@ -96,7 +96,7 @@ get_header();
             <?php $count++ ?>
             <?php endwhile; wp_reset_postdata(); ?>
             <?php else: ?>
-                <p><?php _e( 'Sorry, no blog posts were found' ); ?></p>
+                <p><?php echo 'Sorry, no products were found'; ?></p>
             <?php endif; ?>
 
 

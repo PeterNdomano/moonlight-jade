@@ -89,12 +89,12 @@ $the_query = new WP_Query( $args );
             <?php $count++ ?>
             <?php endwhile; wp_reset_postdata(); ?>
             <?php else: ?>
-                <p><?php _e( 'Sorry, no blog posts were found' ); ?></p>
+                <p><?php echo 'Sorry, no blog posts were found'; ?></p>
             <?php endif; ?>
 
 
             <div class="col-md-12 text-right">
-                <a class="btn mn-btn-next text-dark" href="<?php echo get_bloginfo('url') ?>/index.php/Blog">
+                <a class="btn mn-btn-next text-dark" href="<?php echo esc_url( home_url() ) ?>/index.php/Blog">
                     More Blog Posts
                     <i class="icon-arrow-right-circle"></i>
                 </a>
